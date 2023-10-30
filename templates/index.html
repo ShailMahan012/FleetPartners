@@ -1811,7 +1811,16 @@ Fax: 01-2902635</p>
 								
 				<div class="site-info">
 					<div class="container">
-						All rights reserved. © 2023 MaxRide Leasing						<ul class="autoroyal-footer-menu">
+						All rights reserved. © <span id="custom_year"></span> MaxRide Leasing						<ul class="autoroyal-footer-menu">
+<script>
+	function set_year() {
+		const span = document.getElementById("custom_year")
+		const d = new Date();
+		let year = d.getFullYear();
+		span.innerHTML = year;
+	}
+	set_year()
+</script>
 
 							<li id="menu-item-6632" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5619 current_page_item menu-item-6632"><a href="#HOME" aria-current="page">Home</a></li>
 <li id="menu-item-6629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-6629"><a rel="privacy-policy" href="#Policy">Privacy Policy</a></li>
