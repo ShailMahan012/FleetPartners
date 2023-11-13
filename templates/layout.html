@@ -3002,11 +3002,13 @@ var uiAutocompleteL10n = {"noResults":"No results found.","oneResult":"1 result 
 <script type='text/javascript' src='https://fleetpartners.ng/wp-content/themes/autoroyal/assets/js/jquery.ui.touch-punch.min.js?ver=0.2.3' id='touch-punch-js'></script>
 	
 <script>
-$(".owl-carousel").owlCarousel({
+$("#owl-carousel-custom").owlCarousel({
 	items: 1,
 	center: true,
 	lazyload: true,
 	margin: 10,
+	nav: true,
+	navText:   ["<div class='nav-cus-btn nav-prev'><i class='material-icons'>chevron_left</i></div>", "<div class='nav-cus-btn nav-next'><i class='material-icons'>chevron_right</i></div>"],
 });
 	function set_year() {
 		const span = document.getElementById("custom_year")
