@@ -5,21 +5,22 @@ import logging
 app = Flask(__name__)
 log = logging.getLogger('werkzeug')
 log.setLevel(logging.ERROR)
+domain = "maxrides.net"
 
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("index.html", domain=domain)
 
 
 @app.route("/about")
 def about():
-    return render_template("about.html")
+    return render_template("about.html", domain=domain)
 
 
 @app.route("/contact")
 def contact():
-    return render_template("contact.html")
+    return render_template("contact.html", domain=domain)
 
 
 if __name__ == "__main__":
